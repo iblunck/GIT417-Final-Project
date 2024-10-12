@@ -1,0 +1,553 @@
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of CSS Reset */
+
+/* Container for main content */
+.container {
+    /* Set fixed width */
+    width: 1280px;
+    /* Center */
+    margin: 0 auto;
+    /* Center text */
+    text-align: center;
+    /* Set background color */
+    background-color: #FFFCF4;
+    /* Set font family */
+    font-family: 'Inter';
+}
+img{
+    /* Ensure images are block elements */
+    display: block;
+    /* Center images */
+    margin: auto;
+    /* Fixed width for images */
+    width: 400px;
+}
+#home, footer{
+    /* Set background color */
+    background-color: #313131;
+}
+main{
+    /* Set text color */
+    color: #313131;
+}
+h1{
+    /* Set text color */
+    color:#FFFCF4;
+    /* Set font size */
+    font-size: 80px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Bold text */
+    font-weight: bold;
+    /* Padding for spacing */
+    padding: 1em 0px .5em 0px;
+}
+nav h2{
+    /* Hide sr-only heading */
+    display: none;
+}
+nav ul{
+    /* Flexbox layout for nav */
+    display: flex;
+    /* Space out nav items */
+    justify-content: space-between;
+    /* Center nav items */
+    align-items: center;
+}
+nav a{
+    /* Remove underline */
+    text-decoration: none;
+    /* Set text color */
+    color: #FFFCF4;
+}
+nav li{
+    /* Set font size */
+    font-size: 30px;
+    /* Inline display for nav items */
+    display: inline;
+    /* Padding for spacing */
+    padding: 20px 50px 30px 50px;
+    /* Uppercase text */
+    text-transform: uppercase;
+     /* Bold text */
+    font-weight: bold;
+}
+#about h2{
+    /* Font size for heading */
+    font-size: 45px;
+    /* Left align heading */
+    text-align: left;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Bold text */
+    font-weight: bold;
+    /* Padding for spacing */
+    padding: 160px 0px 40px 120px;
+}
+#about blockquote{
+    /* Font size for blockquote */
+    font-size: 18px;
+    /* Left align blockquote */
+    text-align: left;
+    /* Padding for spacing */
+    padding: 0px 120px 20px 120px;
+    /* Line height for readability */
+    line-height: 150%;
+}
+#products h2{
+    /* Font size for heading */
+    font-size: 50px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Bold text */
+    font-weight: bold;
+    /* Padding for spacing */
+    padding-top: 100px;
+}
+#productGrid{
+    display: grid;
+    /* Use grid layout */   
+	grid-template-columns: 1fr 1fr;
+    /* Two columns */
+	grid-template-rows: 1fr 2fr;
+    /* Two rows */
+	gap: 1rem;
+    /* Space between grid items */
+}
+.currentItem h3{
+    /* Font size for current item heading */
+    font-size: 40px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Bold text */
+    font-weight: bold;
+}
+.currentItem p{
+    /* Font size for current item p */
+    font-size: 18px;
+    /* Line height for readability */
+    line-height: 150%;
+    /* Top padding */
+    padding-top: 30px;
+    /* Bottom padding */
+    padding-bottom: 30px;
+}
+.hiddenItem {
+    /* Hide elements */
+    display: none;
+}
+#prod1 p, #prod2 p, #prod3 p, #prod4 p{
+    /* Font size for product paragraphs */
+    font-size: 18px;
+    /* Line height for readability */
+    line-height: 150%;
+    /* Top padding */
+    padding-top: 30px;
+    /* Bottom padding */
+    padding-bottom: 30px;
+}
+#prod1 h3, #prod2 h3, #prod3 h3, #prod4 h3{
+    /* Font size for product headings */
+    font-size: 40px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Bold text */
+    font-weight: bold;
+}
+#switcherButtons h3{
+    /* Hide heading in switcher buttons */
+    display: none;
+}
+button{
+    /* Block display for buttons */
+	display: block;
+    /* Padding for buttons */
+	padding: 1rem;
+    /* Background for buttons */
+	background-color: #313131;
+    /* Text color for buttons */
+	color: #FFFCF4;
+    /* No border */
+	border: none;
+    /* Font size for button text */
+    font-size: 18px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Semi-bold text */
+    font-weight: 600;
+}
+#switcherButtons{
+    /* Use grid layout */
+	display: grid;
+    /* Four columns */
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Space between buttons */
+	gap: 2rem;
+    /* Fit width to content */
+	width: fit-content;
+    /* Center horizontally */
+	margin: 6rem auto;
+}
+#game h2{
+    /* Font size for game heading */
+    font-size: 50px;
+    /* Bold text */
+    font-weight: bold;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Padding for spacing */
+    padding: 150px 50px 50px 50px;
+}
+#game p{
+    /* Font size for game paragraph */
+    font-size: 18px;
+    /* Bottom padding */
+    padding-bottom: 50px;
+}
+#game div{
+    /* Max width for game div */
+	max-width: 800px;
+    /* Center div horizontally */
+	margin: 0 auto;
+}
+#game form{
+    /* Fixed width for game form */
+	width: 325px;
+    /* Center form with margin */
+	margin: 1rem auto;
+    /* Font size for form text */
+    font-size: 18px;
+    /* Bottom padding */
+    padding-bottom: 50px;
+}
+#game input{
+    /* Inline-block for inputs */
+	display: inline-block;
+    /* Fixed width for inputs */
+	width: 50px;
+}
+#game label{
+    /* Inline-block for labels */
+	display: inline-block;
+    /* Auto width for labels */
+	width: auto;
+}
+#gameOutput{
+    /* Center text within the game output area */
+	text-align: center;
+    /* Use grid layout for flexible arrangement */
+	display: grid;
+    /* Two equal columns for output items */
+	grid-template-columns: 1fr 1fr;
+    /* Space between grid items */
+	gap: 1rem;
+    /* Fixed width for the game output area */
+	width: 300px; 
+    /* Center the game output area horizontally */
+	margin: 0 auto;
+}
+#gameOutput span{
+    /* Block display for each output item */
+	display: block;
+    /* Fixed width for the item */
+	width: 20px;
+    /* Fixed height for the item */
+	height: 20px;
+    /* Padding around the item */
+	padding: 3rem;
+    /* Background color */
+	background-color: #313131;
+    /* Text color */
+	color: #FFFCF4;
+    /* Make the item circular */
+	border-radius: 50%;
+    /* Margin for spacing */
+	margin: 0.5rem auto;
+}
+#userNum span, #randomNum span{
+    /* Font size */
+    font-size: 20px;
+}
+#game form label{
+    /* Top and bottom padding for labels */
+    padding: 20px 0px;
+}
+#gameDisplay h3{
+    /* Do not display sr-only heading */
+    display: none;
+}
+#errorMsg{
+    /* Pink color for error messages */
+    color: pink;
+    /* Font size */
+    font-size: 1.2em;
+    /* Margin for spacing */
+    margin: 0.25em 0;
+    /* Bold text */
+    font-weight: bold;
+    /* Hide error message by default */
+    display: none;
+}
+#gameMsg{
+    /* Hide the game message by default */
+    display: none;
+    /* Padding for spacing */
+    padding: 40px 0px 20px 0px;
+}
+form #guessGame {
+    /* Dark background for the form */
+    background-color: #313131;
+    /* No border for the form */
+    border: none;
+    /* Padding for form spacing */
+    padding: 10px 0px;
+    /* Uppercase text */
+    text-transform: uppercase;
+    /* Font size for input text */
+    font-size: 20px;
+    /* Text color */
+    color: #FFFCF4;
+    /* Center text within the form */
+    text-align: center;
+}
+form #numGuess{
+    /* Padding for better input spacing */
+    padding: 10px;
+}
+#game{
+    /* Space below the game section */
+    margin-bottom: 200px;
+}
+form{
+    /* Fixed width for the form */
+    width: 600px;
+    /* Block display for the form */
+    display: block;
+    /* Padding for the form */
+	padding: 2em;
+    /* Center the form horizontally */
+	margin: 0 auto;
+    /* Text color */
+	color: #313131;
+	
+}
+#contact .error-message{
+    /* Pink color for contact error messages */
+    color: pink;
+    /* Padding for spacing */
+    padding: 20px;
+    /* Left align the error message */
+    text-align: left;
+    /* Font size */
+    font-size: 18px;
+}
+#name, #email, #phone, #message{
+    /* Full width for input fields */
+    width: 100%;
+    height: 40px;
+    background-color:rgb(236, 228, 218);
+    border: none;
+}
+#contact h2{
+    /* Font size for contact heading */
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#contact label{
+    /* Block display for labels */
+    display: block;
+    text-align: left;
+    /* Margin for spacing */
+    margin: 1em 0em .5em 0em;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.error-message {
+    color: #313131;
+    font-size: 0.9em;
+    margin-top: 0.25em;
+    /* Hide by default */
+    display: none; 
+}
+fieldset legend{
+    /* Font size for the fieldset legend */
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 0px 10px 0px;
+}
+fieldset{
+    /* Use flexbox for layout */
+    display: flex;
+    /* Stack items vertically */
+    flex-direction: column;
+}
+input [type="radio"]{
+    /* Margin to the right for spacing */
+    margin-right: 10px;
+}
+/* Submit button styles */
+#mySubmit{
+    padding: 1em 3em;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: #313131;
+    color:#FFFCF4;
+    border: none;
+    font-weight: bold;
+}
+/* Submitted info display styles */
+#submittedInfo{
+    font-size: 18px;
+    line-height: 150%;
+}
+/* Success message styles */
+#successMessage{
+    display: none;
+    padding: 20px;
+    font-size: 25px;
+    line-height: 150%;
+}
+/* Hide submitted information by default */
+#submittedInfo{
+    display: none;
+}
+/* Footer styles */
+footer{
+    font-size: 18px;
+    color:#FFFCF4;
+    padding: 4em;
+    text-transform: uppercase;
+}
+/* Footer list and website link styles */
+#footer li, #website{
+    font-size: 18px;
+    color:#FFFCF4;
+    padding: .5em;
+}
+/* Paragraph styles in the footer */
+footer p{
+    padding: 1em;
+    text-transform: capitalize;
+}
+/* Link styles in the footer */
+footer a{
+    text-decoration: none;
+    color:#FFFCF4;
+}
+/* Hover effect for footer links */
+#footer a:hover{
+    text-decoration: underline;
+}
+/* Padding for address in the footer */
+footer address{
+    padding: .5em;
+}
+/* SVG icon styles in the footer */
+#footer svg{
+    width: 45px;
+    height: auto;
+    padding-bottom: 1em;
+}
+/* Label color in the home section */
+#home label{
+    color:#FFFCF4
+}
+/* Hover effect for buttons in switcher */
+#switcherButtons button:hover{
+    text-decoration: underline;
+}
+
+/* Dark Mode/Light Mode */
+
+/* Light mode container styles */
+.container.light-mode {
+    background-color: #FFFCF4;
+    color: #313131;
+}
+/* Dark mode container styles */
+.container.dark-mode {
+    background-color: #313131;
+    color: #FFFCF4;
+}
+
+.container.dark-mode #home, .container.dark-mode footer{
+    /* Dark background for home and footer */
+    background-color: #1c1c1c;
+    /* Light text color */
+    color: #FFFCF4;
+}
+/* Dark mode text color for specific sections */
+.container.dark-mode #about, .container.dark-mode #products, .container.dark-mode #game, .container.dark-mode #contactForm, .container.dark-mode #contact {
+    color: #FFFCF4; 
+}
+/* Dark mode styles for game output spans */
+.container.dark-mode #gameOutput span{
+    background-color: #1c1c1c;
+}
+/* Dark mode styles for the submit button */
+.container.dark-mode #mySubmit{
+    background-color: #FFFCF4;
+    color: #313131;
+}
+/* Dark mode button styles */
+.container.dark-mode button{
+    background-color: #1c1c1c;
+}
+/* Dark mode form text color */
+.container.dark-mode #game form{
+    color: #FFFCF4;
+}
+/* Dark mode text color for user and random numbers */
+.container.dark-mode #userNum, .container.dark-mode #randomNum{
+    color:#FFFCF4;
+}

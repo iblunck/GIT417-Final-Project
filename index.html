@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Isabella Blunck">
+        <meta name="description" content="Learn about the works and background of artist Erik Foss.">
+        <title>Erik Foss &mdash; Information</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <script src="script.js" defer></script> 
+    </head>
+    <body class="container">
+        <header id="home">
+            <h1>Erik Foss</h1>
+            <label for="mode-toggle">Toggle Dark/Light Mode</label>
+            <input type="checkbox" id="mode-toggle">
+            <nav>
+                <h2>Main Navigation</h2>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <h2>About the Artist</h2>
+                <blockquote cite="https://www.artsy.net/artwork/erik-foss-vita-et-mort">Erik Foss is a self-taught, American artist, born in Elgin, Illinois, in 1973. He was raised in the deserts just outside of Phoenix, Arizona. His early inspirations were fueled by the American cultural landscape, a religious upbringing, skateboarding, underground music and other elements from subcultures of the time</blockquote>
+                <blockquote cite="https://exhibitiona.com/collections/erik-foss">Foss has held solo exhibitions at Kaikai Kiki Gallery (Toyko), Castor Gallery (New York), PADRE (New York), Boo-Hooray (Montauk), Paul Loya Gallery (Los Angeles), and Gallery Steinsland Berliner (Stockholm), among others. Select group exhibitions include presentations at Christie's (New York), Great Jones Space (New York), Watermill Foundation 19th Annual Benefit Auction (New York), American Academy of Arts and Letters (New York), Dover Street Market (Los Angeles), and The Hole (New York).</blockquote>
+            </section>
+
+            <section id="products">
+                <h2>Products</h2>
+                <section id="switcherButtons">
+                    <h3 class="sr-only">Click on a button to view a product.</h3>
+                    <button data-target="prod1">War Games</button>
+                    <button data-target="prod2">Nightbreed</button>
+                    <button data-target="prod3">We Dropped Cid off at Disneyland</button>
+                    <button data-target="prod4">Aversum</button>
+                 </section>
+                <section id="prod1" class="currentItem">
+                    <h3>War Games, 2024</h3>
+                    <p>Painted on a 60x80 inch canvas using oil paint, water-based paint, acrylic paint, oil sticks, and lead pencil, "War Games" was created by Foss in 2024.</p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f4ed932f022367249957bde/46e0dccc-ba01-431f-930a-c641d698276a/image0.jpeg?format=500w" alt="Painting on canvas made of multicolor and multimedia tools and paints. The main colors are purple, pink, gray, black, blue, and cream. The shapes used are dots, curved lines, and large multicolor strokes of paint. There is a torn-effect on the canvas in the lower right corner.">
+                </section>
+                <section id="prod2" class="hiddenItem">
+                    <h3>Nightbreed, 2024</h3>
+                    <p>Foss used oil paint and water-based paint on a 30x28 inch canvas to create "Nightbreed" in 2024.</p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f4ed932f022367249957bde/f0eaaa5f-0742-455a-98ab-d2e4bf86acd0/IMG_6829.JPG?format=500w" alt="Painting on canvas made using water-based and oil paint with main colors of purple, blue, and white. The background layer is made of neon oranges and greens, covered with deep purples and blues. On top of an airbrushed-looking background are flower and cloud shapes made of purple, blue, and white oil paint.">
+                </section>
+                <section id="prod3" class="hiddenItem">
+                    <h3>We Dropped Cid off at Disneyland, 2024</h3>
+                    <p>Painted on a 25x35 inch canvas with water-based paint, "We Dropped Cid off at Disneyland" was created by Foss in 2024. </p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f4ed932f022367249957bde/a6396ccf-55f1-4a69-b2f4-1574ff778087/Screen+Shot+2024-06-13+at+3.11.12+PM.png?format=500w" alt="Painting on canvas created with water-based paint. The background is of Mickey Mouse in front of the castle at Disneyland, created with an airbrush effect. The foreground is multicolor dots made from different colored paints being mixed together. There are 13 abstract dots on top of the airbrushed scene.">
+                </section>
+                <section id="prod4" class="hiddenItem">
+                    <h3>Aversum, 2024</h3>
+                    <p>Foss used water-based paint on a canvas sized 30x40 inches to create "Aversum" in 2024.</p>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5f4ed932f022367249957bde/e68cf636-c04c-474d-9b6a-4874aa66e877/FE6A32D8-12BC-491B-A6DC-CDB9BB739D9A.JPEG?format=500w" alt="Painting on canvas water-based paint in an airbrush style. The main colors in this painting are orange, white, purple, blue, pink, and red. The shape appears like a bright light shining behind a foggy screen. About 30% of the painting is white while the remaining 70% is a mixture of varying colors, all transitioning smoothly from one to the other.">
+                </section>
+            </section>
+            <section id="game">
+                <div>
+                    <h2>Number Match Game</h2>
+                    <p>In the box below, enter a number between 1 and 10 and click the button to play. If your guess matches the winning number, you win!</p>
+                    <form>
+                        <label for="numGuess">Enter a number between 1 and 10:</label>
+                        <span class="message" id="errorMsg">Please choose a number from 1 to 10.</span>
+                        <input type="number" name="numGuess" id="numGuess">
+                        <input type="submit" name="guessGame" id="guessGame" value="Go!">
+                    </form>
+                    <section id="gameDisplay">
+                        <h3 class="sr-only">Guess a Number!</h3>
+                        <ul id="gameOutput">
+                            <li id="userNum"><span></span>Your Guess</li>
+                            <li id="randomNum"><span></span>Winning Number</li>
+                        </ul>
+                        <p id="gameMsg">winning or losing message</p>
+                    </section>
+                </div>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <form autocomplete="on" method="get" id="contactForm">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name">
+                    <span class="error-message" id="nameError"></span>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" autocomplete="email">
+                    <span class="error-message" id="emailError"></span>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" autocomplete="tel">
+                    <span class="error-message" id="phoneError"></span>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                    <span class="error-message" id="messageError"></span>
+
+                    <fieldset>
+                        <legend>Preferred Method of Contact</legend>
+                        <div>
+                            <label for="slct-email">
+                                <input type="radio" id="slct-email" name="contact" value="slct-email">
+                                Email
+                            </label>
+                        </div>
+                        <div>
+                            <label for="slct-phone">
+                                <input type="radio" id="slct-phone" name="contact" value="slct-phone">
+                                Phone
+                            </label>
+                        </div>
+                        <span class="error-message" id="contactError"></span>
+                    </fieldset>
+                    <input type="submit" name="mySubmit" id="mySubmit" value="Submit">
+                    <div id="successMessage"></div>
+                    <div id="submittedInfo">
+                        <h3>Your Submission:</h3>
+                        <p>Name: <span id="displayName"></span></p>
+                        <p>Email: <span id="displayEmail"></span></p>
+                        <p>Phone: <span id="displayPhone"></span></p>
+                        <p>Message: <span id="displayMessage"></span></p>
+                        <p>Preferred Contact Method: <span id="displayContactMethod"></span></p>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <div id="footer">
+                <a href="https://www.instagram.com/erikhfoss/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                </svg></a>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#game">Game</a></li>
+                    <li><a href="#contact">Contact Form</a></li>
+                </ul>
+                <div id="website">
+                    <a href="https://www.erikfossnyc.com/">Website</a>
+                </div>
+                <address>
+                    <a href="mailto:info@erikfossnyc.com">Email</a>
+                </address>
+                <p>Copyright &copy; 2024 Isabella Blunck</p>
+            </div>
+        </footer>
+    </body>
+</html>
